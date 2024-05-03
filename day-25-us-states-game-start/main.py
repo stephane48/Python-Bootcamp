@@ -19,10 +19,10 @@ while len(correct_answer) < 50:
                                      prompt="What's another state's name")).title()
 
     if answer_state == "Exit":
-        missing_states = []
-        for state in data["state"].to_list():
-            if state not in correct_answer:
-                missing_states.append(state)
+        missing_states = [state for state in data["state"].to_list() if state not in correct_answer]
+        # for state in data["state"].to_list():
+        #     if state not in correct_answer:
+        #         missing_states.append(state)
 
         # Create a DataFrame with the missing states
         missing_states_df = pandas.DataFrame({"missing_states": missing_states})
