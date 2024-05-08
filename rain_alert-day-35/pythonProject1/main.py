@@ -1,7 +1,7 @@
 import requests
 from twilio.rest import Client
 
-account_sid = "AC1428574427bd801daec8d3be8763e3f8"
+account_sid = "xxxx"
 auth_token = "xxxx"
 client = Client(account_sid, auth_token)
 
@@ -28,7 +28,7 @@ for hour_data in weather_data["list"]:
 if will_rain:
     message = client.messages.create(
         body="It's going to rain today. Remember to bring an ☂️",
-        from_='+18142921281',
+        from_='xxxx',
         to='xxxx'
     )
     print(message.status)
