@@ -7,7 +7,7 @@ import smtplib
 MY_LAT = 43.653225  # Your latitude
 MY_LONG = -79.383186  # Your longitude
 MY_EMAIL = "yumpom306@gmail.com"
-MY_PASSWORD = "zcbnwfljubgqnalt"
+MY_PASSWORD = "xxxx" #Put your apppassword from gamil here
 
 
 def is_iss_overhead():

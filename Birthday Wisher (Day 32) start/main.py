@@ -3,7 +3,7 @@ import smtplib
 import datetime as dt
 
 MY_EMAIL = "yumpom306@gmail.com"
-MY_PASSWORD = "zcbnwfljubgqnalt"
+MY_PASSWORD = "xxxx" #Put your apppassword from gamil here
 
 now = dt.datetime.now()
 weekday = now.weekday()
